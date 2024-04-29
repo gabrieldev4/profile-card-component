@@ -1,0 +1,152 @@
+/* Variáveis globais */
+:root{
+    --primary-color: hsl(185, 75%, 39%);
+    --secondary-color: hsl(229, 23%, 23%);
+    --terciary-color: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --large-font:1.8em;
+    --medium-font:1.4em;
+    --small-font:1.1em;
+}
+
+/*  Tipografia */
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings: "YOPQ" 300;
+}
+
+.dark-gray{
+    color: var(--dark-gray);
+}
+
+
+/* Layout
+---------------------- */
+
+html, body{
+    height: 100%;
+}
+
+body{
+    min-width: 375px;
+    height: 100%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+/* Imagens do fundo
+----------------------- */
+.bg-img{
+    z-index: -1;
+    position: absolute;
+}
+.bg-img-top{
+    right: 50vw;
+    bottom: 50vh;
+}
+
+.bg-img-bottom{
+    left: 50vw;
+    top: 50vh;
+}
+
+/* Box
+-------------------- */
+.box{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 325px;
+    width: 325px;
+    height: 350px;
+    /* border-radius: 15px;   */
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+}
+
+.box-img{
+    width: 100%;
+    height: 35%;
+}
+
+.box-img img{
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Caixa do perfil
+--------------------- */
+.box-perfil{
+    border: 4px solid white;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    top:80px;
+    
+}
+.img-perfil{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Descrição do box
+--------------------- */
+.box-description{
+    width: 100%;
+    position: absolute;
+    top: 190px;
+    text-align: center;
+}
+.box-description h1{
+    font-size: var(--small-font);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.box-description h2{
+    margin: 6px 0;
+    font-size: var(--small-font);
+    font-weight: 400;
+}
+
+/* Lista */
+.box-description ul{
+    color: var(--secondary-color);
+    border-top: 0.2px solid;
+    border-color: var(--dark-gray);
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.box-description ul li{
+    margin: 0 20px;
+}
+
+.box-description ul li h2{
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.box-description ul li h3{
+    font-size: var(--small-font);
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+
